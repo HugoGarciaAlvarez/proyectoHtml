@@ -1,0 +1,15 @@
+.imagenDelCarrusel{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+  .colorAzul {
+    background-color: #213856 !important;
+  }
+  .colorBordeAzul{
+    border-color: #213856 !important;
+  }
+  .letraAzul{
+    color: #213856 !important;
+  }

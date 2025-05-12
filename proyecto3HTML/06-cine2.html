@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .imagenDelCarrusel {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+        }
+
+        .colorAzul {
+            background-color: #213856 !important;
+        }
+
+        .colorBordeAzul {
+            border-color: #213856 !important;
+        }
+
+        .letraAzul {
+            color: #213856 !important;
+        }
+    </style>
+    </body>
+</head>
+
+<body>
+    <!--Nav igual para todos-->
+    <!--COMIENZO DEL NAV-->
+    <nav class="navbar navbar-expand-lg border-bottom bg-white">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="https://www.plazario2.com/">
+                <img src="https://res.cloudinary.com/deunyl3k1/image/upload/s--3t8mRHdD--/c_thumb,f_auto,q_auto,w_300/v1/prio/mall_common/0001/56/4b4de525da6185638643ba67bfdf21156e15caf0.png"
+                    alt="Logo" style="height: 50px" />
+            </a>
+
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú colapsable -->
+            <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+                <ul class="navbar-nav me-3 mt-2 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tiendasDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tiendas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="tiendasDropdown">
+                            <li><a class="dropdown-item" href="#">Moda</a></li>
+                            <li><a class="dropdown-item" href="#">Ocio</a></li>
+                            <li><a class="dropdown-item" href="#">Restaurantes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#">Visítanos</a></li>
+                    <li class="nav-item"><a class="nav-link letraAzul" href="#">Cine</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aviso legal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--FINAL DEL NAV-->
+
+
+    <div class="text-center mt-4">
+        <div>
+            <h1 class="display-4">Cine Plaza Río 2</h1>
+            <h4 >Vive la experiencia del mejor cine en Madrid Río</h4>
+        </div>
+    </div>
+
+    <section class="mt-5">
+        <div class="container mb-5" >
+            <h2 class="mb-4">Información Práctica</h2>
+            <div class="row ">
+                <div class=" col-12 col-md-7">
+                    <h3>Información General</h3>
+                    <p>Bienvenido al cine del centro comercial Plaza Río 2, en Madrid. Disfruta de las últimas películas
+                        en cartelera en unas instalaciones modernas y cómodas.</p>
+
+                    <h3>Horarios</h3>
+                    <p>De lunes a domingo:</p>
+                    <ul>
+                        <li>Primer pase: 12:00</li>
+                        <li>Último pase: 23:00</li>
+                    </ul>
+
+                    <h3>Situación</h3>
+                    <p>Nos encontramos en el Centro Comercial Plaza Río 2, en la Calle Antonio López, 109, 28026 Madrid.
+                    </p>
+                    <p>Cómo llegar: Metro Legazpi (L6, L3), varias líneas de autobús y parking disponible en el centro
+                        comercial.</p>
+
+                    <h3>Salas</h3>
+                    <p>Disponemos de 10 salas equipadas con:</p>
+                    <ul>
+                        <li>Proyección digital 4K</li>
+                        <li>Sonido Dolby Atmos</li>
+                        <li>Salas 3D</li>
+                        <li>Asientos reclinables en salas VIP</li>
+                    </ul>
+
+                    <h3>Cafetería</h3>
+                    <p>Nuestra cafetería ofrece palomitas, refrescos, snacks, menús combinados y opciones sin gluten.
+                    </p>
+
+                    <h3>Compra de Entradas</h3>
+                    <p>Puedes comprar tus entradas en línea a través del siguiente enlace:</p>
+                    <p>
+                        <a href="#" class="btn btn-dark">Comprar Entradas</a>
+                    </p>
+                </div>
+
+                <div class=" col-12 col-md-5">
+
+                    <img src="cine.jpg"  class="ms-md-5 border border-5 w-100" >
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Comienzo del footer-->
+    <footer class="container-fluid border-top border-5 colorAzul">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 border-bottom border-3">
+                <div class="mt-3 mb-3">
+                    <ul class="nav justify-content-center small">
+                        <li class="nav-item border-end border-1">
+                            <a class="nav-link px-2 text-white"> Inicio</a>
+                        </li>
+                        <li class="nav-item border-end border-1">
+                            <a class="nav-link px-2 text-white">Moda</a>
+                        </li>
+                        <li class="nav-item border-end border-1">
+                            <a class="nav-link px-2 text-white">Ocio</a>
+                        </li>
+                        <li class="nav-item border-end border-1">
+                            <a class="nav-link px-2 text-white"> Restaurantes</a>
+                        </li>
+                        <li class="nav-item border-end border-1">
+                            <a class="nav-link px-2 text-white"> Visitanos</a>
+                        </li>
+                        <li class="nav-item border-end border-1">
+                            <a class="nav-link px-2 text-white">Cine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-white">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 d-flex flex-column flex-lg-row justify-content-between align-items-center mt-5">
+                <!-- Imagen -->
+                <div class="mb-4 mb-lg-0 text-center">
+                    <a href="https://www.plazario2.com/">
+                        <img src="https://res.cloudinary.com/deunyl3k1/image/upload/s--3t8mRHdD--/c_thumb,f_auto,q_auto,w_300/v1/prio/mall_common/0001/56/4b4de525da6185638643ba67bfdf21156e15caf0.png"
+                            alt="Logo Plaza Río 2" class="img-fluid" style="max-width: 400px" />
+                    </a>
+                </div>
+
+                <!-- Texto -->
+                <div class="text-white text-start w-lg-50">
+                    <h3>Suscríbase a Plaza Río 2</h3>
+                    <form action="" method="post">
+                        <p>
+                            Reciba información actualizada sobre el centro comercial Plaza
+                            Río 2 <br />
+                            <label class="form-check mt-2">
+                                <input type="checkbox" name="condiciones" class="form-check-input" required />
+                                He leído y aceptado los <a href="#">términos y condiciones</a>
+                            </label>
+                        </p>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" required placeholder="E-mail" />
+                        </div>
+                        <button type="submit" class="btn btn-dark">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-8 d-flex justify-content-between mt-5 small">
+                <p class="text-white mt-3 pt-1 mt-lg-3 mb-lg-3">
+                    Copyright basadisimo
+                </p>
+                <div class="mt-3 mb-3">
+                    <ul class="nav justify-content-center small">
+                        <li class="nav-item border-end border-1">
+                            <a class="nav-link px-2 text-white" href="#">
+                                Politica de cookies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-white" href="#">Aviso legal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Final del footer-->
+
+
+
+</body>
+
+</html>

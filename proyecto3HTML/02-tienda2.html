@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    
     <link rel="stylesheet" href="css.css" />
     <style>
       .modal img {
@@ -29,6 +30,7 @@
     </style>
   </head>
   <body>
+    <!--Nav igual para todos-->
     <!--COMIENZO DEL NAV-->
     <nav class="navbar navbar-expand-lg border-bottom bg-white">
       <div class="container-fluid">
@@ -37,49 +39,71 @@
           <img
             src="https://res.cloudinary.com/deunyl3k1/image/upload/s--3t8mRHdD--/c_thumb,f_auto,q_auto,w_300/v1/prio/mall_common/0001/56/4b4de525da6185638643ba67bfdf21156e15caf0.png"
             alt="Logo"
-            style="height: 50px;"
+            style="height: 50px"
           />
         </a>
-    
+
         <!-- Botón hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- Menú colapsable -->
-        <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="menuPrincipal"
+        >
           <ul class="navbar-nav me-3 mt-2 mt-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-    
+            <li class="nav-item"><a class="nav-link " href="index.html"><i class="bi bi-house me-1"></i>Inicio</a></li>
+
             <!-- Dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle letraAzul" href="#" id="tiendasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Tiendas
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="tiendasDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-bag me-1 letraAzul"></i>Tiendas
               </a>
               <ul class="dropdown-menu" aria-labelledby="tiendasDropdown">
-                <li><a class="dropdown-item letraAzul" href="#">Moda</a></li>
-                <li><a class="dropdown-item" href="#">Ocio</a></li>
-                <li><a class="dropdown-item" href="#">Restaurantes</a></li>
+                <li><a class="dropdown-item letraAzul" href="02-tienda2.html">Moda</a></li>
+                <li><a class="dropdown-item" href="03-ocio2.html">Ocio</a></li>
+                <li><a class="dropdown-item" href="04-restaurante2.html">Restaurantes</a></li>
               </ul>
             </li>
-    
-            <li class="nav-item"><a class="nav-link" href="#">Visítanos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Cine</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Aviso legal</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="05-visitanos2.html"><i class="bi bi-map me-1"></i>Visítanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="06-cine2.html"><i class="bi bi-film me-1"></i>Cine</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="07-contacto2.html"><i class="bi bi-telephone me-1"></i>Contáctanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="08-avisoLegal2.html"><i class="bi bi-info-circle me-1"></i>Aviso legal</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    
+
     <!--FINAL DEL NAV-->
-    <article class="container-fluid">
-      <h1 class="text-center mt-5">MODA</h1>
-      <h3 class="text-center mb-5">Nuestras tiendas</h3>
+    <article class="container">
+      <h1 class="text-center  mt-5">MODA</h1>
+      <h3 class="text-center  mb-5">Nuestras tiendas</h3>
 
       <div class="d-flex justify-content-center align-items-center"> 
-        <div class="col-auto mt-5">
-          <h3>¡La moda que te inspira está aquí!</h3>
+        <div class="col-12 col-sm-auto col-lg-auto mt-5">
+          <h3 class="text-center">¡La moda que te inspira está aquí!</h3>
         </div>
       </div>
 
@@ -87,11 +111,11 @@
       <div class="d-flex justify-content-center align-items-center">
         <div>
           <!--PRIMERA FILA-->
-          <div class="col-md-12 mt-5">
+          <div class="col-12 col-md-12 mt-5">
             <div class="row justify-content-center gap-5 gap-sm-0">
               <!--Boton 1-->
               <div
-                class="border border-1  ms-5 me-5"
+                class="border border-1  ms-md-1 me-md-1 ms-lg-5 me-lg-5"
                 style="width: 200px; height: auto"
               >
                 <button
@@ -109,7 +133,7 @@
               </div>
               <!--Boton 2-->
               <div
-                class="border border-1 ms-5 me-5"
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
                 style="width: 200px; height: auto"
               >
                 <button
@@ -127,7 +151,7 @@
               </div>
               <!--Boton 3-->
               <div
-                class="border border-1 ms-5 me-5"
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
                 style="width: 200px; height: auto"
               >
                 <button
@@ -150,7 +174,7 @@
             <div class="row justify-content-center gap-5 gap-sm-0">
               <!--Boton 1-->
               <div
-                class="border border-1 ms-5 me-5"
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
                 style="width: 200px; height: auto"
               >
                 <button
@@ -168,7 +192,7 @@
               </div>
               <!--Boton 2-->
               <div
-                class="border border-1 ms-5 me-5"
+                class="border border-1ms-md-1 me-md-1 ms-lg-5 me-lg-5"
                 style="width: 200px; height: auto"
               >
                 <button
@@ -187,7 +211,7 @@
               </div>
               <!--Boton 3-->
               <div
-                class="border border-1 ms-5 me-5"
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
                 style="width: 200px; height: auto"
               >
                 <button
@@ -210,7 +234,7 @@
             <div class="row justify-content-center gap-5 gap-sm-0">
               <!--Boton 1-->
               <div
-                class="border border-1 ms-5 me-5"
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
                 style="width: 200px; height: auto"
               >
                 <button
@@ -227,7 +251,7 @@
               </div>
               <!--Boton 2-->
               <div
-                class="border border-1 ms-5 me-5"
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
                 style="width: 200px; height: auto"
               >
                 <button
@@ -245,7 +269,7 @@
               </div>
               <!--Boton 3-->
               <div
-                class="border border-1 ms-5 me-5"
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
                 style="width: 200px; height: auto"
               >
                 <button
@@ -289,7 +313,9 @@
               <div class="container-fluid">
                 <div class="row">
                   <!--Imagen-->
+                  <h1>ADIDAS</h1>
                   <div class="col-12 col-lg-6">
+                    
                     <img
                       src="https://res.cloudinary.com/deunyl3k1/image/upload/s--g-2wpNwg--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/mall_common/0001/05/5265c5dad78db2c6c8d8b311e11d65624f11954b.jpeg"
                       alt=""
@@ -299,7 +325,7 @@
                   </div>
                   <!--Texto-->
                   <div class="col-12 col-lg-6">
-                    <h6 class="mt-">
+                    <h6>
                       Tu tienda de deporte, para cualquier deporte.
                     </h6>
                     <p>
@@ -326,14 +352,11 @@
                       Madrid.
                     </p>
 
-                    <p>
-                      <a
-                        class="nav-link"
-                        href="https://www.adidas.es/"
-                        target="_blank"
-                        >ADIDAS</a
-                      >
+                    <p>Enlace a la tienda: <a class="sinDecoracion" href="https://www.adidas.es/" target="_blank">ADIDAS</a>  
+                      
+                      
                     </p>
+                  
                   </div>
                 </div>
               </div>
@@ -365,6 +388,7 @@
               <!-- Aquí va el contenido -->
               <div class="container-fluid">
                 <div class="row">
+                  <h1>BERSHKA</h1>
                   <!--Imagen-->
                   <div class="col-12 col-lg-6">
                     <img
@@ -376,7 +400,6 @@
                   </div>
                   <!--Texto-->
                   <div class="col-12 col-lg-6">
-                    <h6 class="mt-">Bershka</h6>
                     <p>
                       BERSHKA es un espacio vanguardista pensado para el público
                       joven más exigente seguidor de las últimas tendencias en
@@ -395,9 +418,9 @@
                       Avenida del Manzanares número 210, en Madrid.
                     </p>
                     <p>¡Los looks más cool te esperan en BERSHKA!</p>
-                    <p>
+                    <p>Enlace a la tienda:
                       <a
-                        class="nav-link"
+                        class="sinDecoracion"
                         href="https://www.bershka.com/es/"
                         target="_blank"
                         >BERSHKA</a
@@ -433,6 +456,7 @@
               <!-- Aquí va el contenido -->
               <div class="container-fluid">
                 <div class="row">
+                  <h1>JACK JONS</h1>
                   <!--Imagen-->
                   <div class="col-12 col-lg-6">
                     <img
@@ -444,7 +468,7 @@
                   </div>
                   <!--Texto-->
                   <div class="col-12 col-lg-6">
-                    <h6 class="mt-">Jack Jons</h6>
+                
                     <p>
                       Lo último en looks y tendencias en moda y calzado para
                       hombre.
@@ -466,9 +490,9 @@
                       a domingo, desde las 10 horas hasta las 22 horas.
                     </p>
 
-                    <p>
+                    <p> Enlace a la tienda
                       <a
-                        class="nav-link"
+                        class="sinDecoracion"
                         href="https://jackjonesmadrid.com/"
                         target="_blank"
                         >JACK&JONES</a
@@ -506,6 +530,7 @@
               <div class="container-fluid">
                 <div class="row">
                   <!--Imagen-->
+                  <h1>CALZEDONIA</h1>
                   <div class="col-12 col-lg-6">
                     <img
                       src="https://res.cloudinary.com/deunyl3k1/image/upload/s--1n9NGZwd--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/mall_common/0001/05/ec4df838b6a343c1619c5808d347df4d11f357bf.jpeg"
@@ -516,7 +541,7 @@
                   </div>
                   <!--Texto-->
                   <div class="col-12 col-lg-6">
-                    <h6 class="mt-">Calzedonia</h6>
+                    
                     <p>
                       En CALZEDONIA podrás encontrar la más amplia variedad de
                       artículos como ropa de baño para mujer y también para
@@ -536,9 +561,9 @@
                       calidad.
                     </p>
 
-                    <p>
+                    <p> Enlace a la tienda
                       <a
-                        class="nav-link"
+                        class="sinDecoracion"
                         href="https://es.calzedonia.com/"
                         target="_blank"
                         >CALZEDONIA</a
@@ -573,6 +598,7 @@
               <!-- Aquí va el contenido -->
               <div class="container-fluid">
                 <div class="row">
+                  <h1>SCALPERS</h1>
                   <!--Imagen-->
                   <div class="col-12 col-lg-6">
                     <img
@@ -584,15 +610,13 @@
                   </div>
                   <!--Texto-->
                   <div class="col-12 col-lg-6">
-                    <h6 class="mt-">Scalpers</h6>
+                    
                     <p>
                       La historia de SCALPERS es una historia de rebeldes con
                       una causa: desencorsetar al hombre de los cánones
                       estrictos de la moda masculina. Aportando diseños frescos,
                       que proporcionan el máximo confort y bajo la máxima de la
-                      elegancia liagada a las últimas tendencias, en Scalpers
-                      queremos sacar a nuestros clientes de la zona conocida y
-                      empujarlos a vivir en lo fresco y los moderno.
+                      elegancia liagada a las últimas tendencias.
                     </p>
                     <p>
                       En Scalpers encontrarás todo tipo de prendas y accesorios
@@ -608,9 +632,9 @@
                       qué estás esperando?
                     </p>
 
-                    <p>
+                    <p> Enlace a la tienda:
                       <a
-                        class="nav-link"
+                        class="sinDecoracion"
                         href="https://scalpers.es/"
                         target="_blank"
                         >SCALPERS</a
@@ -645,6 +669,7 @@
               <!-- Aquí va el contenido -->
               <div class="container-fluid">
                 <div class="row">
+                  <h1>H&M</h1>
                   <!--Imagen-->
                   <div class="col-12 col-lg-6">
                     <img
@@ -656,7 +681,7 @@
                   </div>
                   <!--Texto-->
                   <div class="col-12 col-lg-6">
-                    <h6 class="mt-">H&M</h6>
+                   
                     <p>
                       H&M es una marca de moda, que ofrece los últimos estilos y
                       la inspiración para todos/as. Los clientes del C.C. Plaza
@@ -672,9 +697,9 @@
                       ¿A qué estás esperando? No lo dudes y visita hm.com para
                       más información o sigue @HM para inspirarte todos los días
                     </p>
-                    <p>
+                    <p> Enlace a la tienda:
                       <a
-                        class="nav-link"
+                        class="sinDecoracion"
                         href="http://www2.hm.com/es_es/index.html"
                         target="_blank"
                         >H&M</a
@@ -711,6 +736,7 @@
               <!-- Aquí va el contenido -->
               <div class="container-fluid">
                 <div class="row">
+                  <h1>CITEES</h1>
                   <!--Imagen-->
                   <div class="col-12 col-lg-6">
                     <img
@@ -722,7 +748,6 @@
                   </div>
                   <!--Texto-->
                   <div class="col-12 col-lg-6">
-                    <h6 class="mt-">CITEES</h6>
                     <p>
                       La tienda Citees llega al Centro Comercial Plaza Río 2
                       como un espacio único para los amantes de las camisetas
@@ -737,9 +762,9 @@
                       en prendas ecofriendly, 100% algodón orgánico, cumpliendo
                       con la política de comercio justo.
                     </p>
-                    <p>
+                    <p>Enlace a la tienda:
                       <a
-                        class="nav-link"
+                        class="sinDecoracion"
                         href="http://www.citees.es/"
                         target="_blank"
                         >CITEES</a
@@ -776,6 +801,7 @@
               <!-- Aquí va el contenido -->
               <div class="container-fluid">
                 <div class="row">
+                  <h1>FOOT LOCKER</h1>
                   <!--Imagen-->
                   <div class="col-12 col-lg-6">
                     <img
@@ -787,18 +813,17 @@
                   </div>
                   <!--Texto-->
                   <div class="col-12 col-lg-6">
-                    <h6 class="mt-">Foot Locker</h6>
                     <p>
-                      Sneakers, gorras, mochilas, ropa deportiva…FOOT LOCKER ofrece todo esto y mucho más.
+                      Sneakers, gorras, mochilas, ropa deportiva… FOOT LOCKER ofrece todo esto y mucho más.
                     </p>
                     <p>
                       Como especialista en calzado y ropa relacionada con el mundo del deporte y el street urban, FOOT LOCKER es la tienda perfecta si lo que buscas son novedades y calidad de los artículos.
                     <p>
                       <p>
                         No lo dudes y visítanos en Centro Comercial Plaza Río 2 (Planta baja), ubicado en Avenida del Manzanares, número 210 (Madrid). ¿A qué estás esperando? Te esperamos de lunes a domingo, desde las 10 horas hasta las 22 horas.
-                      </p>
+                      </p> Enlace a la tienda:
                       <a
-                        class="nav-link"
+                        class="sinDecoracion"
                         href="https://www.footlocker.es/es/inicio"
                         target="_blank"
                         >FOOT LOOKER</a
@@ -835,6 +860,7 @@
               <!-- Aquí va el contenido -->
               <div class="container-fluid">
                 <div class="row">
+                  <h1>JD SPORTS</h1>
                   <!--Imagen-->
                   <div class="col-12 col-lg-6">
                     <img
@@ -846,16 +872,15 @@
                   </div>
                   <!--Texto-->
                   <div class="col-12 col-lg-6">
-                    <h6 class="mt-">JD Sports</h6>
                     <p>
                       Las últimas tendencias en moda urbana te esperan en la tienda JD de Plaza Rio 2. Es un espacio donde encontrarás las colecciones más recientes de ropa deportiva y de zapatillas de marcas como Nike, Adidas, Fila, Puma, New Balance, Converse, Vans, Ellesse, Jordan, The North Face, Lacoste o SikSilk. Ven a visitarnos y pon al día tu estilo con las sneakers que más se llevan o con lo nuevo en conjuntos de chándal, camisetas, sudaderas, chaquetas y pantalones joggers.
                     </p>
                     <p>
                       ¿A qué estás esperando? No lo dudes y visítanos. Te esperamos en Centro Comercial Plaza Río 2, ubicado en Avenida del Manzanares, número 210, Madrid.
-                    <p>
+                    <p>Enlace a la tienda:
                       
                       <a
-                        class="nav-link"
+                        class="sinDecoracion"
                         href="http://www.jdsports.es/"
                         target="_blank"
                         >JD SPORTS</a
@@ -872,32 +897,32 @@
       <!--Fin modal 9-->
     </article>
     <!--FOOTER IGUAL PARA TODOS-->
-    <!--Comienzo del footer-->
+       <!--Comienzo del footer-->
     <footer class="container-fluid border-top border-5 colorAzul">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8 border-bottom border-3">
           <div class="mt-3 mb-3">
             <ul class="nav justify-content-center small">
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white"> Inicio</a>
+                <a class="nav-link px-2 text-white" href="index.html"> Inicio</a>
               </li>
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white">Moda</a>
+                <a class="nav-link px-2 text-white" href="02-tienda2.html">Moda</a>
               </li>
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white">Ocio</a>
+                <a class="nav-link px-2 text-white" href="03-ocio2.html">Ocio</a>
               </li>
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white"> Restaurantes</a>
+                <a class="nav-link px-2 text-white" href="04-restaurante2.html"> Restaurantes</a>
               </li>
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white"> Visitanos</a>
+                <a class="nav-link px-2 text-white" href="05-visitanos2.html"> Visitanos</a>
               </li>
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white">Cine</a>
+                <a class="nav-link px-2 text-white" href="06-cine2.html">Cine</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-2 text-white">Contacto</a>
+                <a class="nav-link px-2 text-white" href="07-contacto2.html">Contacto</a>
               </li>
             </ul>
           </div>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <title>Visítanos</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
@@ -13,9 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    
 
-    
     <link rel="stylesheet" href="css.css" />
   </head>
   <body>
@@ -51,7 +49,11 @@
           id="menuPrincipal"
         >
           <ul class="navbar-nav me-3 mt-2 mt-lg-0">
-            <li class="nav-item"><a class="nav-link letraAzul" href="index.html"><i class="bi bi-house me-1"></i>Inicio</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="bi bi-house me-1"></i>Inicio</a
+              >
+            </li>
 
             <!-- Dropdown -->
             <li class="nav-item dropdown">
@@ -66,19 +68,32 @@
                 <i class="bi bi-bag me-1"></i>Tiendas
               </a>
               <ul class="dropdown-menu" aria-labelledby="tiendasDropdown">
-                <li><a class="dropdown-item " href="02-tienda2.html">Moda</a></li>
+                <li><a class="dropdown-item" href="02-tienda2.html">Moda</a></li>
+
                 <li><a class="dropdown-item" href="03-ocio2.html">Ocio</a></li>
                 <li><a class="dropdown-item" href="04-restaurante2.html">Restaurantes</a></li>
               </ul>
             </li>
 
-            <li class="nav-item"><a class="nav-link" href="05-visitanos2.html"><i class="bi bi-map me-1"></i>Visítanos</a></li>
-            <li class="nav-item"><a class="nav-link" href="06-cine2.html"><i class="bi bi-film me-1"></i>Cine</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="07-contacto2.html"><i class="bi bi-telephone me-1"></i>Contáctanos</a>
+            <li class="nav-item letraAzul">
+              <a class="nav-link" href="05-visitanos2.html"
+                ><i class="bi bi-map me-1"></i>Visítanos</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="08-avisoLegal2.html"><i class="bi bi-info-circle me-1"></i>Aviso legal</a>
+              <a class="nav-link" href="06-cine2.html"
+                ><i class="bi bi-film me-1"></i>Cine</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="07-contacto2.html"
+                ><i class="bi bi-telephone me-1"></i>Contáctanos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="08-avisoLegal2.html"
+                ><i class="bi bi-info-circle me-1"></i>Aviso legal</a
+              >
             </li>
           </ul>
         </div>
@@ -86,142 +101,178 @@
     </nav>
 
     <!--FINAL DEL NAV-->
-    <!--Inicio del header-->
-    <header>
-      <!--Video fijo en el header-->
-      <div
-        class="container-fluid d-flex justify-content-center align-items-center m-0 p-0"
-      >
-        <div class="ratio ratio-16x9">
-          <video
-            autoplay
-            loop
-            muted
-            playsinline
-            src="img/Plaza Rio 2 (8).mp4"
-          ></video>
-          <div
-            class="position-absolute top-100 start-50 translate-middle text-white text-center"
-          >
-            <h1 class="d-inline-block text-white px-4 py-2 rounded colorAzul">
-              HOLA #PLAZARIVER
-            </h1>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!--Fin del header-->
-    <!--Inicio del article-->
-    <article>
-      <div class="container-fluid mt-5">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <h2 class="d-inline-block border-bottom border-2 colorBordeAzul">
-              Descubre Río Plaza 2
-            </h2>
-            <p class="mt-1 fs-4">
-              Río Plaza 2 es mucho más que un centro comercial: es un espacio
-              pensado para ofrecer experiencias únicas a cada visitante.
-            </p>
-            <p class="fs-4">
-              Con una amplia variedad de tiendas, propuestas gastronómicas para
-              todos los gustos y un ambiente moderno y acogedor, Río Plaza 2 se
-              ha convertido en el punto de encuentro ideal para familias, amigos
-              y amantes de las compras.
-            </p>
-            <p class="fs-4">
-              Cada rincón de este centro invita a disfrutar de momentos
-              especiales, con eventos, actividades y sorpresas que renuevan la
-              experiencia en cada visita.
-            </p>
-          </div>
-          <div class="col-12 col-lg-6">
-            <img
-              src="img/01.imagenParanomicoPlaza.webp"
-              class="rounded"
-              alt=""
-              width="100%"
-            />
-          </div>
-        </div>
-      </div>
-      <!--Comienzo del segundo eslogan-->
-      <div class="container-fluid mt-5 p-5">
-        <h5
-          class="text-center display-3 border-top border-bottom border-5 colorBordeAzul"
-        >
-          comodidad, estilo y entretenimiento
-        </h5>
-      </div>
-      <!--Fin del eslogan-->
-      <!--Comienzo del carrusel-->
-      <div class="w-100">
-        <div
-          id="carouselExample"
-          class="carousel slide w-100"
-          data-bs-ride="carousel"
-          data-bs-interval="9000"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="img/05.imagenCarrusel04.jpg"
-                class="d-block imagenDelCarrusel"
-                alt="Imagen1"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/04.imagenCarrusel03.jpg"
-                class="d-block imagenDelCarrusel"
-                alt="Imagen2"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/03.imagenCarrusel02.jpg"
-                class="d-block imagenDelCarrusel"
-                alt="Imagen3"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/02.imagenCarrusel01.jpg"
-                class="d-block imagenDelCarrusel"
-                alt="Imagen3"
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev shadow"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <i class="bi bi-arrow-left-circle-fill fs-1" aria-hidden="true"></i>
-            <span class="visually-hidden">Previous</span>
-          </button>
 
-          <!-- Botón siguiente con icono de Bootstrap -->
-          <button
-            class="carousel-control-next shadow"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
+    <!-- CONTENIDO -->
+    <div class="container py-5">
+      <h1 class="mb-4 border-bottom pb-2 colorBordeAzul">
+        Visítanos – Plaza Río 2
+      </h1>
+      <section class="mb-5">
+        <h3 class="colorAzul text-white">¿Cómo llegar?</h3>
+        <p>
+          Ubicado junto al río Manzanares, Plaza Río 2 está a pocos minutos del
+          centro de Madrid y frente a Madrid Río.
+        </p>
+        <p>Puedes llegar fácilmente en coche, metro o autobús.</p>
+        <p>
+          <a href="https://www.plazario2.com/acceso" target="_blank"
+            >Consulta la mejor ruta desde tu ubicación</a
           >
-            <i
-              class="bi bi-arrow-right-circle-fill fs-1"
-              aria-hidden="true"
-            ></i>
-            <span class="visually-hidden">Next</span>
-          </button>
+        </p>
+      </section>
+      <section class="mb-5">
+        <h3 class="colorAzul text-white">Dirección</h3>
+        <p>Centro Comercial Plaza Río 2</p>
+        <p>Avenida del Manzanares, 210</p>
+        <p>28026 Madrid, España</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.8112709695633!2d-3.703996624173982!3d40.39087527144373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42264aea26f26b%3A0xf00a1384ed1877c7!2sCentro%20Comercial%20Plaza%20R%C3%ADo%202!5e0!3m2!1ses!2ses!4v1747217129198!5m2!1ses!2ses"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="w-100"
+          height="500px"
+        ></iframe>
+      </section>
+
+      <section class="mb-5">
+        <div class="row">
+          <!-- Horarios -->
+          <div class="col-12 col-md-4 mb-4">
+            <h3 class="colorAzul text-white">Horarios</h3>
+            <p>Tiendas: De lunes a domingo, de 10:00 a 22:00.</p>
+            <p>
+              Hipermercado Alcampo City: De lunes a domingo, de 9:00 a 22:00.
+            </p>
+          </div>
+
+          <!-- Accesos y Transporte -->
+          <div class="col-12 col-md-4 mb-4">
+            <h3 class="colorAzul text-white">Accesos y Transporte</h3>
+            <p>
+              Parking gratuito: 2 horas al día para todos los clientes, con
+              1.500 plazas disponibles.
+            </p>
+            <p>
+              Transporte público: Fácil acceso mediante metro, autobús y
+              cercanías.
+            </p>
+          </div>
+
+          <!-- Contacto -->
+          <div class="col-12 col-md-4 mb-4">
+            <h3 class="colorAzul text-white">Contacto</h3>
+            <p>Teléfono: 91 948 98 86</p>
+            <p>
+              Email: <a href="mailto:info@plazario2.com">info@plazario2.com</a>
+            </p>
+            <p>
+              Redes sociales:
+              <a href="https://www.instagram.com/plazario2/" target="_blank"
+                >Instagram</a
+              >,
+              <a href="https://twitter.com/plazario2" target="_blank">Twitter</a
+              >,
+              <a href="https://www.tiktok.com/@plazario2" target="_blank"
+                >TikTok</a
+              >
+            </p>
+          </div>
         </div>
-      </div>
-      <!--Fin del carrusel-->
-    </article>
-    <!--Fin del article-->
+      </section>
+      <section class="mb-5">
+        <h3 class="colorAzul text-white">Servicios que ofrecemos</h3>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <h4>Wi-Fi Gratuito</h4>
+            <p>
+              Disfruta de conexión Wi-Fi gratuita en todo el centro comercial.
+              El nombre y contraseña, los podras pedir en red
+            </p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h4>Guardería</h4>
+            <p>
+              Servicio de guardería disponible para que compres con tranquilidad
+              mientras los niños se divierten en un entorno seguro.
+            </p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h4>Puntos de carga</h4>
+            <p>Recarga tu móvil o tus dispositivos electrónicos en las estaciones distribuidas por el centro.</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 col-lg-4">
+            <h4>Zonas de descanso</h4>
+            <p>
+              Relájate en nuestras áreas de descanso con asientos cómodos y ambiente agradable.
+            </p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h4>Otros servicios</h4>
+            <p>
+              Incluye baños accesibles, atención al cliente, cajeros automáticos, consignas y más.
+            </p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h4>Puntos de carga</h4>
+            <p>Recarga tu móvil o tus dispositivos electrónicos en las estaciones distribuidas por el centro.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <h3 class="colorAzul text-white">¿Qué encontrarás?</h3>
+        <p>
+          Más de 160 tiendas, restaurantes y servicios, incluyendo moda,
+          tecnología, belleza, hogar y un hipermercado.
+        </p>
+        <p>
+          Además, disfruta de nuestro mirador con vistas al río y una amplia
+          oferta gastronómica.
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <h4 class="mt-5 mb-3">Planta baja</h4>
+              <img src="img/mapa plazario.png" alt="planta baja" width="100%" />
+            </div>
+            <div class="col-12 col-sm-6">
+              <h4 class="mt-5 mb-3">Planta media</h4>
+              <img
+                src="img/mapa plazario2.png"
+                alt="planta media"
+                width="100%"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <h4 class="mt-5 mb-3">Planta alta-1</h4>
+              <img
+                src="img/mapa plazario3.png"
+                alt="planta baja"
+                width="100%"
+              />
+            </div>
+            <div class="col-12 col-sm-6">
+              <h4 class="mt-5 mb-3">Planta alta restaurantes</h4>
+              <img
+                src="img/mapa plazario4.png"
+                alt="planta media"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
     <!--FOOTER IGUAL PARA TODOS-->
-    <!--Comienzo del footer-->
+      <!--Comienzo del footer-->
     <footer class="container-fluid border-top border-5 colorAzul">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8 border-bottom border-3">

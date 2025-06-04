@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    
     <link rel="stylesheet" href="css.css" />
     <style>
       .modal img {
@@ -29,6 +30,7 @@
     </style>
   </head>
   <body>
+   <!--Nav igual para todos-->
     <!--COMIENZO DEL NAV-->
     <nav class="navbar navbar-expand-lg border-bottom bg-white">
       <div class="container-fluid">
@@ -60,34 +62,34 @@
           id="menuPrincipal"
         >
           <ul class="navbar-nav me-3 mt-2 mt-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link " href="index.html"><i class="bi bi-house me-1"></i>Inicio</a></li>
 
             <!-- Dropdown -->
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle letraAzul"
+                class="nav-link dropdown-toggle"
                 href="#"
                 id="tiendasDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Tiendas
+                <i class="bi bi-bag me-1 letraAzul"></i>Tiendas
               </a>
               <ul class="dropdown-menu" aria-labelledby="tiendasDropdown">
-                <li><a class="dropdown-item " href="#">Moda</a></li>
-                <li><a class="dropdown-item letraAzul" href="#">Ocio</a></li>
-                <li><a class="dropdown-item" href="#">Restaurantes</a></li>
+                <li><a class="dropdown-item " href="02-tienda2.html">Moda</a></li>
+                <li><a class="dropdown-item letraAzul" href="03-ocio2.html">Ocio</a></li>
+                <li><a class="dropdown-item" href="04-restaurante2.html">Restaurantes</a></li>
               </ul>
             </li>
 
-            <li class="nav-item"><a class="nav-link" href="#">Visítanos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Cine</a></li>
+            <li class="nav-item"><a class="nav-link" href="05-visitanos2.html"><i class="bi bi-map me-1"></i>Visítanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="06-cine2.html"><i class="bi bi-film me-1"></i>Cine</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contáctanos</a>
+              <a class="nav-link" href="07-contacto2.html"><i class="bi bi-telephone me-1"></i>Contáctanos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Aviso legal</a>
+              <a class="nav-link" href="08-avisoLegal2.html"><i class="bi bi-info-circle me-1"></i>Aviso legal</a>
             </li>
           </ul>
         </div>
@@ -95,12 +97,12 @@
     </nav>
 
     <!--FINAL DEL NAV-->
-    <article>
+    <article class="mb-5">
       <h1 class="text-center mt-5">OCIO</h1>
       <h3 class="text-center mb-5">Nuestras tiendas</h3>
       <!--Contenido Principal-->
-      <div class="container-fluid">
-        <div class="row d-flex justify-content-center align-items-center mb-5">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
           <div class="col-12 col-sm-6 p-sm-5 ms-sm-5">
             <h3>¡Diversión sin límites te espera!</h3>
             <p>
@@ -120,66 +122,56 @@
             </p>
             <p>¡Ven y vive la experiencia del juego en su máxima expresión!</p>
           </div>
-          <div class="col-12 col-sm-6 ms-sm-5">
-            <div class="row">
-              <!--Boton 1-->
-              <div
-                class="border border-1 ms-sm-5 me-sm-4 "
-                style="width: 200px; height: auto"
+          <div class="col-auto">
+            <!--Boton 1-->
+            <div class="border border-1" style="width: 200px; height: auto">
+              <button
+                type="button"
+                class="btn btn-full p-4"
+                data-bs-toggle="modal"
+                data-bs-target="#Modal1"
               >
-                <button
-                  type="button"
-                  class="btn btn-full"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Modal1"
-                >
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR80ujn6KP8qecjPYAuzE2OVeVHB5vehSiGFD60oMD48JB_N4cBncxUOZiOEUeEFffCayY&usqp=CAU"
-                    alt="Logo Adidas"
-                    width="100%"
-                  />
-                </button>
-                <!--Boton 2-->
-              </div>
-              <div
-                class="border border-1 me-sm-4 "
-                style="width: 200px; height: auto"
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR80ujn6KP8qecjPYAuzE2OVeVHB5vehSiGFD60oMD48JB_N4cBncxUOZiOEUeEFffCayY&usqp=CAU"
+                  alt="Logo Adidas"
+                  width="100%"
+                />
+              </button>
+              <!--Boton 2-->
+            </div>
+            <div class="border border-1 mt-2 mb-2 " style="width: 200px; height: auto">
+              <button
+                type="button"
+                class="btn btn-full p-4"
+                data-bs-toggle="modal"
+                data-bs-target="#Modal2"
               >
-                <button
-                  type="button"
-                  class="btn btn-full"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Modal2"
-                >
-                  <img
-                    src="img/019.Logo_GAME_Store_Iberia.png"
-                    alt="Logo Adidas"
-                    width="100%"
-                  />
-                </button>
-              </div>
-              <!--Boton 3-->
-              <div
-                class="border border-1 "
-                style="width: 200px; height: auto"
+                <img
+                  src="img/019.Logo_GAME_Store_Iberia.png"
+                  alt="Logo Adidas"
+                  width="100%"
+                />
+              </button>
+            </div>
+            <!--Boton 3-->
+            <div class="border border-1 " style="width: 200px; height: auto">
+              <button
+                type="button"
+                class="btn btn-full p-4"
+                data-bs-toggle="modal"
+                data-bs-target="#Modal3"
               >
-                <button
-                  type="button"
-                  class="btn btn-full"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Modal3"
-                >
-                  <img
-                    src="img/020.logoJuguetos-1384200.png"
-                    alt="Logo juguete"
-                    width="100%"
-                  />
-                </button>
-              </div>
+                <img
+                  src="img/020.logoJuguetos-1384200.png"
+                  alt="Logo juguete"
+                  width="100%"
+                />
+              </button>
             </div>
           </div>
         </div>
       </div>
+      <!--Fin de la prueba-->
 
       <!--AQUI VAN LOS MODALES-->
       <!-- Modal contenido del modal 1 -->
@@ -357,32 +349,32 @@
 
       <!--Fin modal 3-->
     </article>
-    <!--Comienzo del footer-->
+       <!--Comienzo del footer-->
     <footer class="container-fluid border-top border-5 colorAzul">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8 border-bottom border-3">
           <div class="mt-3 mb-3">
             <ul class="nav justify-content-center small">
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white"> Inicio</a>
+                <a class="nav-link px-2 text-white" href="index.html"> Inicio</a>
               </li>
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white">Moda</a>
+                <a class="nav-link px-2 text-white" href="02-tienda2.html">Moda</a>
               </li>
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white">Ocio</a>
+                <a class="nav-link px-2 text-white" href="03-ocio2.html">Ocio</a>
               </li>
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white"> Restaurantes</a>
+                <a class="nav-link px-2 text-white" href="04-restaurante2.html"> Restaurantes</a>
               </li>
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white"> Visitanos</a>
+                <a class="nav-link px-2 text-white" href="05-visitanos2.html"> Visitanos</a>
               </li>
               <li class="nav-item border-end border-1">
-                <a class="nav-link px-2 text-white">Cine</a>
+                <a class="nav-link px-2 text-white" href="06-cine2.html">Cine</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-2 text-white">Contacto</a>
+                <a class="nav-link px-2 text-white" href="07-contacto2.html">Contacto</a>
               </li>
             </ul>
           </div>

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moda</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    
+    <link rel="stylesheet" href="css.css" />
+    <style>
+      .modal img {
+        aspect-ratio: 16/9;
+        object-fit: cover;
+      }
+      .btn-full {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border: none;
+        background: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Nav igual para todos-->
+    <!--COMIENZO DEL NAV-->
+    <nav class="navbar navbar-expand-lg border-bottom bg-white">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="https://www.plazario2.com/">
+          <img
+            src="https://res.cloudinary.com/deunyl3k1/image/upload/s--3t8mRHdD--/c_thumb,f_auto,q_auto,w_300/v1/prio/mall_common/0001/56/4b4de525da6185638643ba67bfdf21156e15caf0.png"
+            alt="Logo"
+            style="height: 50px"
+          />
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú colapsable -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="menuPrincipal"
+        >
+          <ul class="navbar-nav me-3 mt-2 mt-lg-0">
+            <li class="nav-item"><a class="nav-link " href="index.html"><i class="bi bi-house me-1"></i>Inicio</a></li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="tiendasDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-bag me-1 letraAzul"></i>Tiendas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="tiendasDropdown">
+                <li><a class="dropdown-item letraAzul" href="02-tienda2.html">Moda</a></li>
+                <li><a class="dropdown-item" href="03-ocio2.html">Ocio</a></li>
+                <li><a class="dropdown-item" href="04-restaurante2.html">Restaurantes</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="05-visitanos2.html"><i class="bi bi-map me-1"></i>Visítanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="06-cine2.html"><i class="bi bi-film me-1"></i>Cine</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="07-contacto2.html"><i class="bi bi-telephone me-1"></i>Contáctanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="08-avisoLegal2.html"><i class="bi bi-info-circle me-1"></i>Aviso legal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--FINAL DEL NAV-->
+    <article class="container">
+      <h1 class="text-center  mt-5">MODA</h1>
+      <h3 class="text-center  mb-5">Nuestras tiendas</h3>
+
+      <div class="d-flex justify-content-center align-items-center"> 
+        <div class="col-12 col-sm-auto col-lg-auto mt-5">
+          <h3 class="text-center">¡La moda que te inspira está aquí!</h3>
+        </div>
+      </div>
+
+
+      <div class="d-flex justify-content-center align-items-center">
+        <div>
+          <!--PRIMERA FILA-->
+          <div class="col-12 col-md-12 mt-5">
+            <div class="row justify-content-center gap-5 gap-sm-0">
+              <!--Boton 1-->
+              <div
+                class="border border-1  ms-md-1 me-md-1 ms-lg-5 me-lg-5"
+                style="width: 200px; height: auto"
+              >
+                <button
+                  type="button"
+                  class="btn btn-full"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal1"
+                >
+                  <img
+                    src="https://static.vecteezy.com/ti/vetor-gratis/t1/10994414-adidas-simbolo-logotipo-preto-com-nome-design-de-roupas-icone-abstrato-futebol-ilustracaoial-com-fundo-branco-gratis-vetor.jpg"
+                    alt="Logo Adidas"
+                    width="100%"
+                  />
+                </button>
+              </div>
+              <!--Boton 2-->
+              <div
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
+                style="width: 200px; height: auto"
+              >
+                <button
+                  type="button"
+                  class="btn btn-full"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal2"
+                >
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/023/400/473/small_2x/bershka-bsk-brand-clothes-logo-symbol-black-design-sportwear-fashion-illustration-free-vector.jpg"
+                    alt="Logo Bershka"
+                    width="100%"
+                  />
+                </button>
+              </div>
+              <!--Boton 3-->
+              <div
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
+                style="width: 200px; height: auto"
+              >
+                <button
+                  type="button"
+                  class="btn btn-full mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal3"
+                >
+                  <img
+                    src="img/08.jackJonsLogo.jpg"
+                    alt="Logo Adidas"
+                    width="100%"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Segunda FILA-->
+          <div class="col-md-12 my-5">
+            <div class="row justify-content-center gap-5 gap-sm-0">
+              <!--Boton 1-->
+              <div
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
+                style="width: 200px; height: auto"
+              >
+                <button
+                  type="button"
+                  class="btn btn-full"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal4"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Calzedonia_Logo.jpg"
+                    alt="Logo Calzedonia"
+                    width="100%"
+                  />
+                </button>
+              </div>
+              <!--Boton 2-->
+              <div
+                class="border border-1ms-md-1 me-md-1 ms-lg-5 me-lg-5"
+                style="width: 200px; height: auto"
+              >
+                <button
+                  type="button"
+                  class="btn btn-full"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal5"
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt_q3Ef44Za_0uKzDB5-wKUkJPxUEeLyjDhA&s"
+                    alt="Logo Scalpers"
+                    width="90%"
+                    class=""
+                  />
+                </button>
+              </div>
+              <!--Boton 3-->
+              <div
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
+                style="width: 200px; height: auto"
+              >
+                <button
+                  type="button"
+                  class="btn btn-full mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal6"
+                >
+                  <img
+                    src="img/011.H&M-Logo.svg.png"
+                    alt="Logo HyM"
+                    width="100%"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Tercera FILA-->
+          <div class=" col-md-12 my-5">
+            <div class="row justify-content-center gap-5 gap-sm-0">
+              <!--Boton 1-->
+              <div
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
+                style="width: 200px; height: auto"
+              >
+                <button
+                  type="button"
+                  class="btn btn-full"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal7"
+                >
+                  <img
+                    src="https://res.cloudinary.com/deunyl3k1/image/upload/s--g7fOvHrj--/c_fit,f_auto,h_180,q_auto,w_200/v1/common/mall_common/0001/42/ead096c1b65ddb2f4e9e47f1062bac4840c587b1.png"
+                    width="100%"
+                  />
+                </button>
+              </div>
+              <!--Boton 2-->
+              <div
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
+                style="width: 200px; height: auto"
+              >
+                <button
+                  type="button"
+                  class="btn btn-full"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal8"
+                >
+                  <img
+                    src="https://res.cloudinary.com/deunyl3k1/image/upload/s--x7ICsliY--/c_fit,f_auto,h_180,q_auto,w_200/v1/common/default/0001/03/d9a79f5cec2323fa8748015b3505fe6faf5ea405.png"
+                    width="100%"
+                    class=""
+                  />
+                </button>
+              </div>
+              <!--Boton 3-->
+              <div
+                class="border border-1 ms-md-1 me-md-1 ms-lg-5 me-lg-5"
+                style="width: 200px; height: auto"
+              >
+                <button
+                  type="button"
+                  class="btn btn-full mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal9"
+                >
+                  <img
+                    src="https://res.cloudinary.com/deunyl3k1/image/upload/s--AI3hf7_D--/c_fit,f_auto,h_180,q_auto,w_200/v1/common/default/0001/31/d2e790f7f7d87eff9477ebb42a45e01114d1ea84.jpeg"
+                    alt="Logo HyM"
+                    width="100%"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--AQUI VAN LOS MODALES-->
+      <!-- Modal contenido del modal 1 -->
+      <div
+        class="modal fade"
+        id="Modal1"
+        tabindex="-1"
+        aria-labelledby="Modal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va el contenido -->
+              <div class="container-fluid">
+                <div class="row">
+                  <!--Imagen-->
+                  <h1>ADIDAS</h1>
+                  <div class="col-12 col-lg-6">
+                    
+                    <img
+                      src="https://res.cloudinary.com/deunyl3k1/image/upload/s--g-2wpNwg--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/mall_common/0001/05/5265c5dad78db2c6c8d8b311e11d65624f11954b.jpeg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <!--Texto-->
+                  <div class="col-12 col-lg-6">
+                    <h6>
+                      Tu tienda de deporte, para cualquier deporte.
+                    </h6>
+                    <p>
+                      ADIDAS, mundialmente conocida, no necesita presentación.
+                    </p>
+                    <p>
+                      Fundado en Alemania en 1948, el ADIDAS siempre ha estado
+                      presente en el mundo deportivo a todos los niveles,
+                      innovando en la fabricación de calzado, ropa y accesorios
+                      deportivos.
+                    </p>
+                    <p>
+                      Desde sus inicios ADIDAS trabaja bajo el lema de equipar a
+                      los deportistas con los mejores productos deportivos del
+                      mercado (Zapatillas, equipaciones, sudaderas...).
+                    </p>
+                    <p>
+                      ¿A qué estás esperando? No lo dudes y disfruta de la mejor
+                      selección de productos ADIDAS en Centro Comercial Plaza
+                      Río 2.
+                    </p>
+                    <p>
+                      Te esperamos en Avenida del Manzanares número 210, en
+                      Madrid.
+                    </p>
+
+                    <p>Enlace a la tienda: <a class="sinDecoracion" href="https://www.adidas.es/" target="_blank">ADIDAS</a>  
+                      
+                      
+                    </p>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Fin modal 1-->
+      <!--Contenido del modal 2-->
+      <div
+        class="modal fade"
+        id="Modal2"
+        tabindex="-1"
+        aria-labelledby="Modal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va el contenido -->
+              <div class="container-fluid">
+                <div class="row">
+                  <h1>BERSHKA</h1>
+                  <!--Imagen-->
+                  <div class="col-12 col-lg-6">
+                    <img
+                      src="https://res.cloudinary.com/deunyl3k1/image/upload/s--pgwX28xD--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/mall_common/0001/05/4f504ace1407e4e63a80fb257e1694d530442616.jpeg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <!--Texto-->
+                  <div class="col-12 col-lg-6">
+                    <p>
+                      BERSHKA es un espacio vanguardista pensado para el público
+                      joven más exigente seguidor de las últimas tendencias en
+                      moda e interesados en la música, las redes sociales y las
+                      nuevas tecnologías.
+                    </p>
+                    <p>
+                      Camisetas, sudaderas, jeans o complementos solo son una
+                      muestra de la gran variedad de prendas cool y en tendencia
+                      disponibles en nuestras tiendas.
+                    </p>
+                    <p>
+                      Disfruta la moda con BERSHKA en Centro Comercial Plaza Río
+                      2. Encontrarás gran variedad de prendas y complementos
+                      para conseguir tus mejores outfits. Te esperamos en
+                      Avenida del Manzanares número 210, en Madrid.
+                    </p>
+                    <p>¡Los looks más cool te esperan en BERSHKA!</p>
+                    <p>Enlace a la tienda:
+                      <a
+                        class="sinDecoracion"
+                        href="https://www.bershka.com/es/"
+                        target="_blank"
+                        >BERSHKA</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin del contenido del modal 2-->
+      <!-- Modal contenido del modal 3 -->
+      <div
+        class="modal fade"
+        id="Modal3"
+        tabindex="-1"
+        aria-labelledby="Modal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va el contenido -->
+              <div class="container-fluid">
+                <div class="row">
+                  <h1>JACK JONS</h1>
+                  <!--Imagen-->
+                  <div class="col-12 col-lg-6">
+                    <img
+                      src="https://res.cloudinary.com/deunyl3k1/image/upload/s--XHmaoAQc--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/mall_common/0001/05/5430ff99b98920460a17778e9d6b20a5e34e71ad.jpeg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <!--Texto-->
+                  <div class="col-12 col-lg-6">
+                
+                    <p>
+                      Lo último en looks y tendencias en moda y calzado para
+                      hombre.
+                    </p>
+                    <p>
+                      La empresa se fundó en 1990, y los vaqueros siguen siendo
+                      su centro de gravedad.
+                    </p>
+                    <p>
+                      JACK & JONES se esfuerza por incrementar el legado del
+                      auténtico espíritu denim mediante el desarrollo de diseños
+                      y tratamientos de vanguardia desde el respeto por la
+                      historia.
+                    </p>
+                    <p>
+                      No lo dudes y visítanos en Centro Comercial Plaza Río 2
+                      (Planta alta), ubicado en Avenida del Manzanares, número
+                      210, Madrid. ¿A qué estás esperando? Te esperamos de lunes
+                      a domingo, desde las 10 horas hasta las 22 horas.
+                    </p>
+
+                    <p> Enlace a la tienda
+                      <a
+                        class="sinDecoracion"
+                        href="https://jackjonesmadrid.com/"
+                        target="_blank"
+                        >JACK&JONES</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Fin modal 3-->
+      <!-- Modal contenido del modal 4 -->
+      <div
+        class="modal fade"
+        id="Modal4"
+        tabindex="-1"
+        aria-labelledby="Modal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va el contenido -->
+              <div class="container-fluid">
+                <div class="row">
+                  <!--Imagen-->
+                  <h1>CALZEDONIA</h1>
+                  <div class="col-12 col-lg-6">
+                    <img
+                      src="https://res.cloudinary.com/deunyl3k1/image/upload/s--1n9NGZwd--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/mall_common/0001/05/ec4df838b6a343c1619c5808d347df4d11f357bf.jpeg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <!--Texto-->
+                  <div class="col-12 col-lg-6">
+                    
+                    <p>
+                      En CALZEDONIA podrás encontrar la más amplia variedad de
+                      artículos como ropa de baño para mujer y también para
+                      hombre, así como complementos y accesorios de moda como
+                      calcetines, medias variadas para todos los gustos, y todo
+                      ello con la mejor calidad y al mejor precio.
+                    </p>
+                    <p>
+                      También podrás consultar nuestros best sellers para
+                      descubrir las tendencias más deseadas. Fitness leggins,
+                      vaqueros, sheer tights... ¡Tú eliges!
+                    </p>
+                    <p>
+                      Visítanos en Centro Comercial Plaza Río 2, ubicado en
+                      Avenida del Manzanares número 210, Madrid. ¿A qué estás
+                      esperando? Disfruta de nuestros productos de máxima
+                      calidad.
+                    </p>
+
+                    <p> Enlace a la tienda
+                      <a
+                        class="sinDecoracion"
+                        href="https://es.calzedonia.com/"
+                        target="_blank"
+                        >CALZEDONIA</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal contenido del modal 5 -->
+      <div
+        class="modal fade"
+        id="Modal5"
+        tabindex="-1"
+        aria-labelledby="Modal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va el contenido -->
+              <div class="container-fluid">
+                <div class="row">
+                  <h1>SCALPERS</h1>
+                  <!--Imagen-->
+                  <div class="col-12 col-lg-6">
+                    <img
+                      src="https://res.cloudinary.com/deunyl3k1/image/upload/s--XuX9erp7--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/mall_common/0001/06/0da6da4bb188c12256b2e55b4a41e35fe1d6fac4.jpeg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <!--Texto-->
+                  <div class="col-12 col-lg-6">
+                    
+                    <p>
+                      La historia de SCALPERS es una historia de rebeldes con
+                      una causa: desencorsetar al hombre de los cánones
+                      estrictos de la moda masculina. Aportando diseños frescos,
+                      que proporcionan el máximo confort y bajo la máxima de la
+                      elegancia liagada a las últimas tendencias.
+                    </p>
+                    <p>
+                      En Scalpers encontrarás todo tipo de prendas y accesorios
+                      de moda masculina como pantalones, camisas, polos,
+                      chaquetas sport, zapatos, trajes de baño, abrigos y mucho
+                      más. No lo dudes y acércate a nuestra tienda en plaza Río
+                      2 y entérate de todas las novedades y tendencias que
+                      tenemos en Scalpers.
+                    </p>
+                    <p>
+                      No lo dudes y visítanos en Centro Comercial Plaza Río 2,
+                      ubicado en Avenida del Manzanares, número 210, Madrid. ¿A
+                      qué estás esperando?
+                    </p>
+
+                    <p> Enlace a la tienda:
+                      <a
+                        class="sinDecoracion"
+                        href="https://scalpers.es/"
+                        target="_blank"
+                        >SCALPERS</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal contenido del modal 6 -->
+      <div
+        class="modal fade"
+        id="Modal6"
+        tabindex="-1"
+        aria-labelledby="Modal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va el contenido -->
+              <div class="container-fluid">
+                <div class="row">
+                  <h1>H&M</h1>
+                  <!--Imagen-->
+                  <div class="col-12 col-lg-6">
+                    <img
+                      src="https://res.cloudinary.com/deunyl3k1/image/upload/s--tN39Rxz3--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/mall_common/0001/05/c57b5b72ff3339b2832d83ca465db6328003cc94.jpeg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <!--Texto-->
+                  <div class="col-12 col-lg-6">
+                   
+                    <p>
+                      H&M es una marca de moda, que ofrece los últimos estilos y
+                      la inspiración para todos/as. Los clientes del C.C. Plaza
+                      Río 2 encontrarán las colecciones de mujer, hombre, línea
+                      infantil, juvenil, sport y lo último en lencería y
+                      accesorios. Pero H&M es más que moda. Con el precio, la
+                      calidad y la sostenibilidad profundamente arraigados en su
+                      ADN, H&M no sólo es una posibilidad para que todo el mundo
+                      explore su estilo personal, sino que también ofrece la
+                      posibilidad de crear un futuro de la moda más sostenible.
+                    </p>
+                    <p>
+                      ¿A qué estás esperando? No lo dudes y visita hm.com para
+                      más información o sigue @HM para inspirarte todos los días
+                    </p>
+                    <p> Enlace a la tienda:
+                      <a
+                        class="sinDecoracion"
+                        href="http://www2.hm.com/es_es/index.html"
+                        target="_blank"
+                        >H&M</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Fin modal 6-->
+      <!-- Modal contenido del modal 7 -->
+      <div
+        class="modal fade"
+        id="Modal7"
+        tabindex="-1"
+        aria-labelledby="Modal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va el contenido -->
+              <div class="container-fluid">
+                <div class="row">
+                  <h1>CITEES</h1>
+                  <!--Imagen-->
+                  <div class="col-12 col-lg-6">
+                    <img
+                      src="https://res.cloudinary.com/deunyl3k1/image/upload/s--DMITWubL--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/default/0001/43/3b76f9b0bc7e3c29916f556fef6aceb53d6d9fed.jpeg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <!--Texto-->
+                  <div class="col-12 col-lg-6">
+                    <p>
+                      La tienda Citees llega al Centro Comercial Plaza Río 2
+                      como un espacio único para los amantes de las camisetas
+                      donde conviven las marcas Pampling y Wituka.
+                    </p>
+                    <p>
+                      Todos sus diseños, están impresos sobre camisetas 100%
+                      algodón, de calidad Premium, utilizando la técnica de
+                      impresión textil más duraderas que existen, la serigrafía.
+                      Algo que comparte con la firma Wituka, de un estilo más
+                      casual y urbano, cuya colección de diseños la encontrarás
+                      en prendas ecofriendly, 100% algodón orgánico, cumpliendo
+                      con la política de comercio justo.
+                    </p>
+                    <p>Enlace a la tienda:
+                      <a
+                        class="sinDecoracion"
+                        href="http://www.citees.es/"
+                        target="_blank"
+                        >CITEES</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Fin modal 7-->
+      <!-- Modal contenido del modal 8 -->
+      <div
+        class="modal fade"
+        id="Modal8"
+        tabindex="-1"
+        aria-labelledby="Modal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va el contenido -->
+              <div class="container-fluid">
+                <div class="row">
+                  <h1>FOOT LOCKER</h1>
+                  <!--Imagen-->
+                  <div class="col-12 col-lg-6">
+                    <img
+                      src="https://res.cloudinary.com/deunyl3k1/image/upload/s--n9_SVa_H--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/mall_common/0001/05/acd30010f636b2a23d40a7facb0df23570199e0b.jpeg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <!--Texto-->
+                  <div class="col-12 col-lg-6">
+                    <p>
+                      Sneakers, gorras, mochilas, ropa deportiva… FOOT LOCKER ofrece todo esto y mucho más.
+                    </p>
+                    <p>
+                      Como especialista en calzado y ropa relacionada con el mundo del deporte y el street urban, FOOT LOCKER es la tienda perfecta si lo que buscas son novedades y calidad de los artículos.
+                    <p>
+                      <p>
+                        No lo dudes y visítanos en Centro Comercial Plaza Río 2 (Planta baja), ubicado en Avenida del Manzanares, número 210 (Madrid). ¿A qué estás esperando? Te esperamos de lunes a domingo, desde las 10 horas hasta las 22 horas.
+                      </p> Enlace a la tienda:
+                      <a
+                        class="sinDecoracion"
+                        href="https://www.footlocker.es/es/inicio"
+                        target="_blank"
+                        >FOOT LOOKER</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Fin modal 8-->
+        <!-- Modal contenido del modal 9 -->
+        <div
+        class="modal fade"
+        id="Modal9"
+        tabindex="-1"
+        aria-labelledby="Modal1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí va el contenido -->
+              <div class="container-fluid">
+                <div class="row">
+                  <h1>JD SPORTS</h1>
+                  <!--Imagen-->
+                  <div class="col-12 col-lg-6">
+                    <img
+                      src="https://res.cloudinary.com/deunyl3k1/image/upload/s--8UoqwZmT--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/ds_common/0001/16/064f3199b017b019b2fa3de713e0af52cdb92a89.jpeg"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <!--Texto-->
+                  <div class="col-12 col-lg-6">
+                    <p>
+                      Las últimas tendencias en moda urbana te esperan en la tienda JD de Plaza Rio 2. Es un espacio donde encontrarás las colecciones más recientes de ropa deportiva y de zapatillas de marcas como Nike, Adidas, Fila, Puma, New Balance, Converse, Vans, Ellesse, Jordan, The North Face, Lacoste o SikSilk. Ven a visitarnos y pon al día tu estilo con las sneakers que más se llevan o con lo nuevo en conjuntos de chándal, camisetas, sudaderas, chaquetas y pantalones joggers.
+                    </p>
+                    <p>
+                      ¿A qué estás esperando? No lo dudes y visítanos. Te esperamos en Centro Comercial Plaza Río 2, ubicado en Avenida del Manzanares, número 210, Madrid.
+                    <p>Enlace a la tienda:
+                      
+                      <a
+                        class="sinDecoracion"
+                        href="http://www.jdsports.es/"
+                        target="_blank"
+                        >JD SPORTS</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Fin modal 9-->
+    </article>
+    <!--FOOTER IGUAL PARA TODOS-->
+       <!--Comienzo del footer-->
+    <footer class="container-fluid border-top border-5 colorAzul">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 border-bottom border-3">
+          <div class="mt-3 mb-3">
+            <ul class="nav justify-content-center small">
+              <li class="nav-item border-end border-1">
+                <a class="nav-link px-2 text-white" href="index.html"> Inicio</a>
+              </li>
+              <li class="nav-item border-end border-1">
+                <a class="nav-link px-2 text-white" href="02-tienda2.html">Moda</a>
+              </li>
+              <li class="nav-item border-end border-1">
+                <a class="nav-link px-2 text-white" href="03-ocio2.html">Ocio</a>
+              </li>
+              <li class="nav-item border-end border-1">
+                <a class="nav-link px-2 text-white" href="04-restaurante2.html"> Restaurantes</a>
+              </li>
+              <li class="nav-item border-end border-1">
+                <a class="nav-link px-2 text-white" href="05-visitanos2.html"> Visitanos</a>
+              </li>
+              <li class="nav-item border-end border-1">
+                <a class="nav-link px-2 text-white" href="06-cine2.html">Cine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 text-white" href="07-contacto2.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-8 d-flex flex-column flex-lg-row justify-content-between align-items-center mt-5"
+        >
+          <!-- Imagen -->
+          <div class="mb-4 mb-lg-0 text-center">
+            <a href="https://www.plazario2.com/">
+              <img
+                src="https://res.cloudinary.com/deunyl3k1/image/upload/s--3t8mRHdD--/c_thumb,f_auto,q_auto,w_300/v1/prio/mall_common/0001/56/4b4de525da6185638643ba67bfdf21156e15caf0.png"
+                alt="Logo Plaza Río 2"
+                class="img-fluid"
+                style="max-width: 400px"
+              />
+            </a>
+          </div>
+
+          <!-- Texto -->
+          <div class="text-white text-start w-lg-50">
+            <h3>Suscríbase a Plaza Río 2</h3>
+            <form action="http://www.cursos-diseno.es/mostrar.php" method="post">
+              <p>
+                Reciba información actualizada sobre el centro comercial Plaza
+                Río 2 <br />
+                <label class="form-check mt-2">
+                  <input
+                    type="checkbox"
+                    name="condiciones"
+                    class="form-check-input"
+                    required
+                  />
+                  He leído y aceptado los <a href="#">términos y condiciones</a>
+                </label>
+              </p>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  required
+                  placeholder="E-mail"
+                />
+              </div>
+              <button type="submit" class="btn btn-dark">Enviar</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-8 d-flex justify-content-between mt-5 small">
+          <p class="text-white mt-3 pt-1 mt-lg-3 mb-lg-3">
+            Copyright basadisimo
+          </p>
+          <div class="mt-3 mb-3">
+            <ul class="nav justify-content-center small">
+              <li class="nav-item border-end border-1">
+                <a class="nav-link px-2 text-white" href="08-avisoLegal2.html">
+                  Politica de cookies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 text-white" href="08-avisoLegal2.html">Aviso legal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Final del footer-->
+  </body>
+</html>

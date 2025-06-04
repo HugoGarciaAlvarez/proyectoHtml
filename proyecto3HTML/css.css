@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.imagenDelCarrusel {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+.colorAzul {
+  background-color: #213856 !important;
+}
+.colorBordeAzul {
+  border-color: #213856 !important;
+}
+.letraAzul {
+  color: #213856 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", serif !important;
+  font-weight: 600;
+  line-height: 1.2;
+}
+p {
+  font-family: "Inter", sans-serif !important;
+}
+
+.modal img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.btn-full {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.cartelera {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.pelicula {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+}
+.pelicula img {
+  width: 100%;
+  height: auto;
+}
+.pelicula h3 {
+  font-size: 25px;
+  margin: 10px 0 5px;
+}
+.pelicula p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+.pelicula a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.pelicula a:hover {
+  background: #0056b3;
+}
+.sinDecoracion{
+  text-decoration: none;
+}

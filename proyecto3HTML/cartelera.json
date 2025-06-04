@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "Dune: Parte Dos",
+    "director": "Denis Villeneuve",
+    "sinopsis": "Paul busca venganza en un mundo desértico dominado por traiciones y visiones.",
+    "cartel": "https://www.themoviedb.org/t/p/original/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
+    "enlace": "https://www.cinesa.es/"
+  },
+  {
+    "titulo": "Godzilla vs Kong",
+    "director": "Adam Wingard",
+    "sinopsis": "Los titanes se enfrentan a una amenaza que podría destruir su mundo.",
+    "cartel": "https://www.themoviedb.org/t/p/w1280/yJTk4eqQd9Yo5REpFbTSOMkbSgn.jpg",
+    "enlace": "https://www.cinesa.es/"
+  },
+  {
+    "titulo": "Garfield: La película",
+    "director": "Mark Dindal",
+    "sinopsis": "Garfield se embarca en una aventura ultra mega salvaje con su padre perdido.",
+    "cartel": "https://www.themoviedb.org/t/p/w1280/tkdc73JiPVvzngSpbLEIfFNjll1.jpg",
+    "enlace": "https://www.cinesa.es/"
+  },
+  {
+    "titulo": "Furiosa",
+    "director": "George Miller",
+    "sinopsis": "Una joven Furiosa lucha por sobrevivir en un mundo salvaje.",
+    "cartel": "https://www.themoviedb.org/t/p/w1280/hstQNWXBkZUVMH7VB3VqDDhX6cX.jpg",
+    "enlace": "https://www.cinesa.es/"
+  },
+  {
+    "titulo": "Kung Fu Panda 4",
+    "director": "Mike Mitchell",
+    "sinopsis": "Po debe encontrar un sucesor mientras enfrenta un nuevo villano.",
+    "cartel": "https://www.themoviedb.org/t/p/w1280/7JspmokDnpm8SEg28wtstfGps0K.jpg",
+    "enlace": "https://www.cinesa.es/"
+  },
+  {
+    "titulo": "Civil War",
+    "director": "Alex Garland",
+    "sinopsis": "En un futuro distópico, Estados Unidos está dividido por una guerra.",
+    "cartel": "https://www.themoviedb.org/t/p/w1280/jG6fvplI80TJ69pWBYz1SgVBZVz.jpg",
+    "enlace": "https://www.cinesa.es/"
+  }
+]
